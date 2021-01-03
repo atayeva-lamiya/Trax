@@ -172,11 +172,13 @@ body {
 /* Qutular */
 .qutular {
     display: flex; 
-    justify-content: center;
-    flex-direction: row;
     align-items: center;
     text-align: center;
     margin-top: 12%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transform: translateY(147px);
 }
 .box-same-color {
     width: 370px;
