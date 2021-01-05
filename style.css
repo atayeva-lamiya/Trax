@@ -275,8 +275,6 @@ body {
 .daireler {
     display: flex;
     justify-content: space-around;
-    /* margin-left: 10%;
-    margin-right: 10%; */
     padding: 0px 100px;
 }
 .daire {
@@ -285,7 +283,6 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    width: 16%;
 }
 .daire-button {
     width: 90px;
@@ -305,9 +302,25 @@ body {
     position: absolute;
     height: 1px;
     width: 100%;
-    top: 45px;
+    top: 50%;
     background: white;
     left: 100%;
+}
+.daireler .xett:before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    background: white;
+    right: 100%;
+}
+.daireler .daire:first-child .xett::before {
+    display: none;
+}
+/* --- :nth-child() :last-child ile evez etmek olar ---- */
+ .daireler .daire:nth-child(5) .xett::after {
+    display: none;
 }
 .daire-p-basliq {
     font-size: 14px;
